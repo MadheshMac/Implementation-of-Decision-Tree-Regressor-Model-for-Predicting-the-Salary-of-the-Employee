@@ -20,31 +20,20 @@ Program to implement the Decision Tree Regressor Model for Predicting the Salary
 Developed by: Madheswaran
 RegisterNumber:  212222040090
 */
-```
 
-
-```
 import pandas as pd
 data=pd.read_csv("C:/Users/admin/Desktop/Salary.csv")
 data.head()
-```
 
-```
 data.info()
-```
 
-```
 data.isnull().sum()
-```
 
-```
 from sklearn.preprocessing import LabelEncoder
 le=LabelEncoder()
 data['Position']=le.fit_transform(data['Position'])
 data.head()
-```
 
-```
 x=data[['Position','Level']]
 y=data['Salary']
 from sklearn.model_selection import train_test_split
@@ -56,13 +45,10 @@ y_predict=dt.predict(x_test)
 from sklearn import metrics
 mse=metrics.mean_squared_error(y_test,y_predict)
 mse
-```
-```
+
 r2=metrics.r2_score(y_test,y_predict)
 r2
-```
 
-```
 dt.predict([[5,6]])
 ```
 
