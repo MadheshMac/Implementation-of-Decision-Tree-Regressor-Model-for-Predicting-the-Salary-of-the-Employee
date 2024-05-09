@@ -8,11 +8,13 @@ To write a program to implement the Decision Tree Regressor Model for Predicting
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
+```
 1.Import the required libraries.
 2.Upload the csv file and read the dataset. 3.Check for any null values using the isnull() function.
 3.From sklearn.tree inport DecisionTreeRegressor.
 4.Import metrics and calculate the Mean squared error.
 5.Apply metrics to the dataset, and predict the output.
+```
 ## Program:
 ```
 /*
